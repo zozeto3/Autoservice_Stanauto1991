@@ -1,0 +1,25 @@
+/* тук слагаме стила за цялата страница */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* * е възможно най-общия селектор, затова е по-добре да е в началото */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* всичкия стил за body e добре да е на едно място, а не разхвърлян в различни файлове */
+body {
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-image: url("/img/pexels-cottonbro-4489743.jpg");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: 100% 100%;
+    height: 100vh;
+}

@@ -1,12 +1,44 @@
-body {
-    background-image: url(./img/pexels-cottonbro-4489743.jpg);
-    background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-position: 100% 100%;
-    height: 100vh;
+/* -------------------------------------------------------------------------- */
+/*           в този файл е само стила, касаещ елементите във header и nav     */
+/* -------------------------------------------------------------------------- */
+
+/* ----------------------------- header styling ----------------------------- */
+.header {
+    width: 100%;
+    height: 200px;
+    display: block;
+    background-color: #101010;
 }
 
+.inner_header {
+    width: 80%;
+    height: 100%;
+    /*background-image: url('./img/pexels-cottonbro-4489743.jpg');*/
+    display: block;
+    margin: 0 auto;
+    background-color: #ff0000;
+}
+
+.logo_container {
+    height: 100%;
+    display: table;
+    float: left;
+}
+
+.logo_container h1 {
+    color: #ffffff;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    font-family: 'Montserrat', 'sans-serif';
+    font-size: 45px;
+}
+
+.logo_container h1 span {
+    font-weight: 800;
+}
+
+/* ------------------------------- nav styling ------------------------------ */
 .nav-area {
     font-family: 'Poppins';
 }
@@ -59,45 +91,4 @@ body {
     .nav-area ul li {
         width: 100%;
     }
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.header {
-    width: 100%;
-    height: 200px;
-    display: block;
-    background-color: #101010;
-}
-
-.inner_header {
-    width: 80%;
-    height: 100%;
-    /*background-image: url('./img/pexels-cottonbro-4489743.jpg');*/
-    display: block;
-    margin: 0 auto;
-    background-color: #ff0000;
-}
-
-.logo_container {
-    height: 100%;
-    display: table;
-    float: left;
-}
-
-.logo_container h1 {
-    color: #ffffff;
-    height: 100%;
-    display: table-cell;
-    vertical-align: middle;
-    font-family: 'Montserrat', 'sans-serif';
-    font-size: 45px;
-}
-
-.logo_container h1 span {
-    font-weight: 800;
 }
