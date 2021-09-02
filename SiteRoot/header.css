@@ -1,16 +1,32 @@
-body {
-    background-image: url(./img/pexels-cottonbro-4489743.jpg);
-    background-repeat: no-repeat;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.banner-area {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(./img/pexels-cottonbro-4489743.jpg);
     -webkit-background-size: cover;
     background-size: cover;
-    background-position: 100% 100%;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 100vh;
 }
 
+
+/*.banner-area h2 {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 60px;
+    font-family: monospace;*/
+
+
+}
 .nav-area {
     font-family: 'Poppins';
 }
-
 .nav-area ul {
     list-style: none;
     margin: 0;
@@ -18,24 +34,23 @@ body {
     display: flex;
     flex-wrap: wrap;
 }
-
 .nav-area ul li {
     width: 25%;
 }
-
 .nav-area ul li>ul {
     display: none;
     flex-direction: column;
+    position: fixed;
 }
-
 .nav-area ul li>ul li {
     width: 100%;
 }
-
 .nav-area ul li:hover>ul {
     display: flex;
+    position: absolute;
+    flex-direction: column;
+    width: 25%;
 }
-
 .nav-area a {
     text-transform: uppercase;
     display: block;
@@ -45,50 +60,38 @@ body {
     text-decoration: none;
     text-align: center;
 }
-
 .nav-area a:hover {
     background: #909090;
     color: #fff;
 }
-
 .nav-area .drop-down li>a:hover {
     background: #909090;
 }
-
 @media (max-width:600px) {
     .nav-area ul li {
         width: 100%;
     }
 }
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 .header {
     width: 100%;
     height: 200px;
     display: block;
     background-color: #101010;
 }
-
 .inner_header {
     width: 80%;
     height: 100%;
     /*background-image: url('./img/pexels-cottonbro-4489743.jpg');*/
+    
     display: block;
     margin: 0 auto;
     background-color: #ff0000;
 }
-
 .logo_container {
     height: 100%;
     display: table;
     float: left;
 }
-
 .logo_container h1 {
     color: #ffffff;
     height: 100%;
@@ -97,7 +100,6 @@ body {
     font-family: 'Montserrat', 'sans-serif';
     font-size: 45px;
 }
-
 .logo_container h1 span {
     font-weight: 800;
 }

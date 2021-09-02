@@ -89,7 +89,7 @@
 .inner_footer {
     width: 100%;
     margin-bottom: 30px;
-}*/
+}**/
     
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
     body {
@@ -151,20 +151,19 @@
         margin-bottom: 10px;
     }
     
-    .footer-col ul,
-    li,
-    a {
-        font-size: 18px;
+    .footer-col ul li a {
+        font-size: 15px;
         text-transform: capitalize;
         color: #ffffff;
         font-weight: 300;
         text-decoration: none;
         color: #bbbbbb;
         display: block;
-        transition: 0.3s ease;
+        transition: all 0.3s ease;
     }
     
-    .footer-col ul li a:hover {
+    .footer-col,
+    ul li a:hover {
         color: #ffffff;
         padding-left: 8px;
     }
